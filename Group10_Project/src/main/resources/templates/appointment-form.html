@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Appointment</title>
+</head>
+<body>
+    <h2>Add Appointment</h2>
+    <form action="/receptionist/appointments/add" method="post">
+        <!-- Patient dropdown -->
+        <div>
+            <label for="patientId">Patient:</label>
+            <select id="patientId" name="patientId" required>
+                <option value="">Select Patient</option>
+                <!-- Populate with list of patients -->
+            </select>
+        </div>
+        
+        <!-- Doctor dropdown -->
+        <div>
+            <label for="doctorId">Doctor:</label>
+            <select id="doctorId" name="doctorId" required>
+                <option value="">Select Doctor</option>
+                <!-- Populate with list of doctors -->
+            </select>
+        </div>
+        
+        <!-- Appointment date -->
+        <div>
+            <label for="appointmentDate">Appointment Date:</label>
+            <input type="datetime-local" id="appointmentDate" name="appointmentDate" required>
+        </div>
+        
+        <!-- Appointment number -->
+        <div>
+            <label for="appointmentNumber">Appointment Number:</label>
+            <input type="text" id="appointmentNumber" name="appointmentNumber" required>
+        </div>
+        
+        <!-- Reason for visit -->
+        <div>
+            <label for="reason">Reason for Visit:</label>
+            <input type="text" id="reason" name="reason" required>
+        </div>
+        
+        <!-- Submit button -->
+        <button type="submit">Add Appointment</button>
+    </form>
+</body>
+</html>

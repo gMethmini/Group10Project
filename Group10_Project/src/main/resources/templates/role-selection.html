@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Select Your Role</title>
+</head>
+<body>
+    <h1>Select Your Role</h1>
+    <button onclick="selectRole('doctor')">Doctor</button>
+    <button onclick="selectRole('patient')">Patient</button>
+    <button onclick="selectRole('receptionist')">Receptionist</button>
+
+    <script>
+        function selectRole(role) {
+            window.location.href = '/register/' + role;
+        }
+    </script>
+</body>
+</html>
